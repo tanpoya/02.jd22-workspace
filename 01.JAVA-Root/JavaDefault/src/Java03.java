@@ -30,14 +30,46 @@ public class Java03 {
             // ++이 앞에 있으면 먼저 증가되고 출력
             System.out.println("worldNum변수값: " + worldNum);
 
+
+
+
+
     // [2. 할당연산자] : = 오른쪽의 값을 왼쪽에 할당함!
 
     // [3. 대입연산자] : 기존값에 연산을 중첩함
     // -> += , -=, *=, /=, %=
 
+    System.out.println("현재인구수 조정: " + (--worldNum));
+
+    System.out.println();
+    System.out.println("[3. 대입연산자]");
+    System.out.println("5년뒤 인구는 몇명인가" + (worldNum += 10) + "억명");
+
     // [4. 비교연산자] : >,<,==,!=,>=,<=
+    // -> 조건문에 값을 비교하여 true / false의 결과가 나옴
+    System.out.println();
+    System.out.println("[4. 비교연산자]");
+    int broAge = 18;
+    int myAge = 19;
+    System.out.println("내가 알던 형은 형인가?" +
+    (broAge>myAge));
+    System.out.println("내가 알던 형은 형인가?" +
+    (broAge>myAge?"응, 형 맞아":"아니, 동생이었어"));
 
     // [5. 논리연산자] : &&(논리곱), ||(논리합), !(논리부정)
+    // &&(논리곱) -> 모두 true이면 true
+    // ||(논리합) -> 하나만 true이면 true
+    // !(논리부정) -> true / false 결과 반대로 출력
+    System.out.println();
+    System.out.println("[5. 논리연산자]");
+    String man = "남자";
+    int age = 20;
+    System.out.println("한 사람의 성별이 남자이고 나이가 각각 남자이고 20세 이상이면 회원자격을 준다. 이 사람은 회원인가?" + (man=="남자"&&age>=20));
+    // 논리합
+    System.out.println((man=="남자"||age>=20));
+    // 논리부정
+    System.out.println("회원이 아니면 나가세요 라고 말한다");
+    System.out.println(!(man=="남자"&&age>=20));
         
     }
 }
