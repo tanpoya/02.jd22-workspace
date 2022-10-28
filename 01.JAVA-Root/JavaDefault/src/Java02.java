@@ -262,8 +262,8 @@ public class Java02 {
         double myDouble2 = 9.78d;
         int myInt2 = (int)myDouble2;
         System.out.println("형변환: 다운캐스팅");
-        System.out.println("double값:" + myDouble2);
-        System.out.println("double을 int로:" + myInt2);
+        System.out.println("int값:" + myInt2);
+        System.out.println("int을 double로:" + myDouble2);
 
 
     }
