@@ -257,7 +257,7 @@ public class Java02 {
         System.out.println("int값:" + myInt);
         System.out.println("double값:" + myDouble);
 
-        // 다운캐스팅
+        // 다운캐스팅 : 할당할 변수타입과 같은 타입을 소괄호에 씀
         // 타입 변수 = (변환타입) 변수
         double myDouble2 = 9.78d;
         int myInt2 = (int)myDouble2;
