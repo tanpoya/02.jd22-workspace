@@ -71,5 +71,94 @@ public class Java03 {
     System.out.println("회원이 아니면 나가세요 라고 말한다");
     System.out.println(!(man=="남자"&&age>=20));
         
+    // [자바 문자열 : String형]
+    System.out.println();
+    System.out.println("[자바 문자열 : String형]");
+
+    // 1. 문자열은 텍스트를 저장하는 데 사용
+
+    // 2. String변수에는 큰따옴표로 묶인 문자열임!
+    String myFace = "I Am Very umm";
+
+    // 3. 문자열 길이
+    //     length()메소드 - 공백도 셈
+    System.out.println(("출력:" + myFace));
+    System.out.println("문자열 길이는? " + myFace.length());
+
+    // 4.문자열 메서드
+    // toUpperCase() - 모두 대문자 변환
+    System.out.println("모두 대문자: " + myFace.toUpperCase());
+    // toLowerCase() - 모두 소문자 변환
+    System.out.println("모두 대문자: " + myFace.toLowerCase());
+
+    // 5. 문자열 시작순번 : 
+    // indexOf()메서드 
+    // - 문자열(공백 포함)에서 지정된 텍스트가 처음 나타나는 인덱스순번 숫자리턴
+    // 대소문자를 구분, 찾는문자열 없으면 -1리턴, 0부터셈
+    System.out.println("문자열시작위치: " + myFace.indexOf("umm"));
+    System.out.println("문자열시작위치: " + myFace.indexOf("Umm")); // 없으면 -1
+
+    // substring(시작순번, 끝순번다음순번)
+    System.out.println("umm만 잘라서 가져와봐: " + myFace.substring(10, 13));
+
+    // 7. 문자열 바꾸기
+    // replace(바꿀 문자열, 바뀔 문자열)
+    System.out.println("umm을 Smart로 변경: " + myFace.replace("umm", "Smart"));
+
+    // 8. 문자열 반복하기
+    // repeat(반복횟수)
+    var nayana = "나야나";
+    // var로 선언하면 왼쪽의 데이터 형에 따라
+    // 자동으로 형을 정해주는 선언방법(Java10부터 도입)
+    System.out.println("나야나 열번반복하기: " + nayana.repeat(10));
+
+    // 9. 문자열 연결
+    // + 연산자를 문자열 사이에 사용하여 결합
+
+    // 10. 문자열 연결 메서드 : concat()
+    // ex)
+    String name = "유";
+    String name2 = "룡";
+    String familyname = "공";
+    System.out.println(familyname.concat(name)); // "공유"
+    System.out.println(familyname.concat(name2));
+
+    // 11. 특수문자 이스케이프 하기 (앞에 역슬래쉬사용!)
+    // \'	'	홑따옴표
+    // \"	"	쌍따옴표
+    // \\	\	역슬래쉬
+    System.out.println("쌍따옴표안에 \"쌍따옴표\"쓰기 ");
+    System.out.println("홑따옴표 특수문자처리: It\'s mine!");
+    System.out.println("역슬래쉬\\아");
+    System.out.println("개행은 \n아");
+    System.out.println("엔터는 \r아 엔터는 여기서 다시 실행함");
+    System.out.println("탭은\t아");
+    System.out.println("백스페이스는\b 아");
+
+    // 참고) 기타 이스케이프 시퀀스
+    // \n	개행	
+    // \r	엔터
+    // \t	탭	
+    // \b	백스페이스	
+
+
+    // [ 수학 메서드 ] - Math 클래스 (정적객체)
+
+    // 1.Math.max( x,y ) - x 와 y 중 최대값
+    // : 다음 형들 중 같은 것 끼리 비교함
+    // int, long, float, double
+    System.out.println("10.1과 10.11 중 큰것은? " + Math.max(10.1, 10.11));
+    // 2.Math.min( x,y ) -  x 와 y 중 최소값
+    System.out.println(Math.min(10, 6));
+    // 3. Math.sqrt( x ) - 제곱근값
+    System.out.println(Math.sqrt(2));
+    // 4. Math.abs(x) - 절대값
+    System.out.println(Math.abs(-10));
+    // 5. Math.random() - 0.0(포함)과 1.0(제외) 사이의 난수
+    // ceil() 올림, floor() 내림, round() 반올림
+    System.out.println("1~5 사이의 난수는? " + Math.ceil(Math.random() * 5));
+
+
     }
 }
+
