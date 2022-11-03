@@ -19,8 +19,26 @@ public class Javafor {
 
         String[] rainbow2 = { "빨강", "주황", "노랑", "초록", "파랑", "남", "보라" };
         for (String i : rainbow2) {
-            System.out.print(i + "색 ");
+            System.out.print(i + "색 \n\n");
         }
+
+
+        String player[] = {
+            "김기춘",
+            "홍서범",
+            "하준상",
+            "이종학",
+            "예비: 이병준",
+            "예비: 서이룡"
+        };
+        System.out.println("#축구 한국 대표팀 선수 전체명단");
+                        // for-each문
+                        for(String mem : player) {
+                            System.out.println(mem);
+                        } //////// for Each ////////////
+
+
+
 
     }
 }

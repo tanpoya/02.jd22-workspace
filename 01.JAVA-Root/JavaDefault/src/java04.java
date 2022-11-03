@@ -208,6 +208,38 @@ public class java04 {
                         // (2) 한계값 : 변수의 한계값 설정
                         // (3) 증감 : 변수의 증가 / 감소
                         
+                        // ### 배열의 전체 축구선수 명단 중
+                        // 올림픽경기에 나갈 선수만 표시하기(continue)
+                        // 예비선수는 제외함(break)
+                        String player[] = {
+                            "김기춘",
+                            "홍서범",
+                            "하준상",
+                            "이종학",
+                            "예비:이병준",
+                            "예비:서이룡"
+                        };
+
+                        System.out.println("#축구 한국 대표팀 선수 전체명단");
+                        // for-each문
+                        for(String mem : player) {
+                            System.out.println(mem);
+                        } //////// for Each ////////////
+
+                        System.out.println();
+
+                        // "하준상"은 제외, "예비: 이병준"부터 출력안함
+                        System.out.println("#일림픽 경기에 참가할 축구선수 명단:");
+                        System.out.println();
+                        // for-each
+                        for(String mem : player) {
+                            // "하준상" 거르기 -> continue
+                            if(mem == "하준상") continue;
+                            // "예비: 이병준" 부터 빠져나감 -> break
+                            if(mem == "예비:이병준") break;
+                            System.out.println(mem);
+                        } /////////// for-each ///////////
+
                         // 8. for-each 문
                         // - 배열값 만큼 자동으로 변수에 할당하면 실행코드 반복 제어함
                         
