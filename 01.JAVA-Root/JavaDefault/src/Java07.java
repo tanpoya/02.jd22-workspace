@@ -1,3 +1,9 @@
+import fruitpack.america.north.UsaFruit;
+import fruitpack.america.south.ChileFruit;
+import fruitpack.america.south.PeruFruit;
+import fruitpack.asia.JapanFruit;
+import fruitpack.asia.KoreaFruit;
+
 // JAVA07. 클래스와 객체 그리고 속성과 메서드
 // + 접근한정자(Modifier) + 캡슐화 + 팩키지
 
@@ -159,6 +165,31 @@ public class Java07 {
         ABC abc = new ABC();
         abc.abcFn("D E F G H I J");
 
+        //// 패키지 메서드 호출하기 /////////////
+        // -> 패키지 클래스를 선택하는 순간 VSCODE가 자동으로
+        // 패키지를 클래스까지 정혹히 import 해준다(최상단)
+
+        System.out.println();
+
+        // 한국호출
+        KoreaFruit korea = new KoreaFruit();
+        korea.koreaFn();
+        
+        // 일본호출
+        JapanFruit japan = new JapanFruit();
+        japan.japanFn();
+
+        // 미국호출
+        UsaFruit usa = new UsaFruit();
+        usa.usaFn();
+
+        // 칠레호출
+        ChileFruit chile = new ChileFruit();
+        chile.chileFn();
+
+        // 페루호출
+        PeruFruit peru = new PeruFruit();
+        peru.peruFn();
 
 
     } //// main 메서드
